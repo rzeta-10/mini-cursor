@@ -186,7 +186,7 @@ async function startInteractiveMode() {
 
   const askQuestion = () => {
     rl.question('👤 What app would you like to create? ', async (answer) => {
-      if (answer.toLowerCase() === 'exit') {
+      if (answer.toLowerCase() === 'exit' || answer.toLowerCase() === 'quit' || answer.toLowerCase() === 'q') {
         console.log('👋 Goodbye!');
         rl.close();
         return;
